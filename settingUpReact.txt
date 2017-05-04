@@ -1,0 +1,23 @@
+1.	Npm init
+2.	Npm install -–save react react-dom
+3.	//Create .gitignore
+    /*
+    node_modules
+    dist
+    */
+5.	//Create index.css under app
+6.	//Create index.js under app
+7.	npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader html-webpack-plugin webpack webpack-dev-server
+8.	//Create webpack.config.js  
+9.	add babel presets to package.json
+    /*
+      "babel" {
+        "presets" : ["env", "react"]
+      }
+    */
+10.	//Create index.html under app with the necessary div with the id of app -or whatever-
+11.	npm install --save-dev webpack-dev-server
+12.	make sure base app loads
+13.	npm install --save prop-types
+14. npm install --save axios
+15. npm install --save react-router-dom
