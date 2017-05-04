@@ -9,13 +9,14 @@ class Header extends React.Component{
       height: "60px",
       display: "flex",
       flexDirection: "row",
-      backgroundColor: "rgb(100,100,100)",
+      backgroundColor: "white",
       alignItems: "center"
     }
     return(
       <div className="header" style={style}>
-        <NavLink activeClassName='active' to='/'>
-            Canal UX
+        <NavLink className="logo" activeClassName='active' to='/'>
+            <p>Canal</p>
+            <span>UX</span>
         </NavLink>
         <LoggedInMenu />
       </div>

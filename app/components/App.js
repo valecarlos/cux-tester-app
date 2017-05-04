@@ -15,7 +15,6 @@ class App extends React.Component {
       <Router>
         <div>
           <Header />
-          <Nav />
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/settings' component={Settings}/>

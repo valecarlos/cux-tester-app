@@ -1,7 +1,62 @@
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 html, body{
   height: 100%;
+  font-family: Helvetica, Arial sans-serif;
+  font-size: 16px;
+}
+
+a{
+  list-style-type: none;
+}
+#app, #app > [data-reactroot] {
+  height: 100%
+}
+
+.route-wrapper{
+  height: calc(100% - 70px);
+}
+
+.header{
+  padding: 15px;
+  height: 70px;
+}
+
+.header .logo {
+  font-size: 2em;
+  float: left;
+  font-weight: 700;
+  display: block;
+}
+
+.header .logo p {
+    color: white;
+    background-color: black;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.header .logo span {
+    color: black;
+    background-color: white;
+    display: inline-block;
+}
+
+.side-bar{
+  height: calc(100%);
+  background-color: #393636;
+  color: white;
+  padding: 10px;
+  width: 300px;
+  float: left;
+}
+
+.home-content{
+  height: calc(100%);
+  width: calc(100% - 300px);
+  float: left;
+  background: pink;
 }
