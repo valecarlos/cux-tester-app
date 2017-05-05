@@ -2,11 +2,15 @@ var React = require('react');
 var PropTypes = require('prop-types');
 
 function SelectTestType(props){
+  const style ={
+      textAlign: "center",
+      padding: "13px"
+    }
   let testTypes = ['Test de los 5 Segundos','Test de logos','Test de comparación']
   return(
     <ul>
       {testTypes.map((testType) => 
-        <li>
+        <li style={style}>
           {testType}
         </li>
       )}

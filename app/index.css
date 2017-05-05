@@ -9,20 +9,29 @@ html, body{
   font-size: 16px;
 }
 
-a{
+ul{
   list-style-type: none;
 }
+a{
+  text-decoration: none;
+}
+
 #app, #app > [data-reactroot] {
   height: 100%
 }
 
 .route-wrapper{
   height: calc(100% - 70px);
+  overflow: auto;
 }
 
 .header{
   padding: 15px;
   height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px;
 }
 
 .header .logo {
@@ -58,5 +67,26 @@ a{
   height: calc(100%);
   width: calc(100% - 300px);
   float: left;
-  background: pink;
+  border-top: 20px solid #F0F0F0;
+  border-bottom: 20px solid #F0F0F0;
+  border-right: 25px solid #F0F0F0;
+  border-left: 25px solid #F0F0F0;
+  padding: 10px;
+}
+
+.form-section{
+  padding: 30px 0px;
+  border-top: 1px solid lightgray;
+}
+
+.label-column, .info-column{
+  float: left;
+}
+
+.label-column{
+  width: 20%;
+}
+
+.info-column{
+  width: 80%;
 }
