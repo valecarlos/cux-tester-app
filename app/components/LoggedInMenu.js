@@ -26,12 +26,14 @@ class LoggedInMenu extends React.Component{
         padding: "10px"
       },
       menuHeader : {
-        backgroundColor: "rgb(200,200,200)",
-        padding: "10px"
+        backgroundColor: "#393636",
+        padding: "10px",
+        color: "white",
+        textAlign : "center"
       },
       hidden : {display: 'none'},
       visible: {
-        width: "200px",
+        minWidth: "200px",
         display: "block",
         position: "absolute",
         zIndex: 2,
@@ -51,11 +53,11 @@ class LoggedInMenu extends React.Component{
             </div>
             <ul>
               <li>
-                <NavLink activeClassName='active' to='/settings'>
+                <NavLink className='menu-link' activeClassName='active' to='/settings'>
                   Settings
               </NavLink>
               </li>
-              <li>
+              <li className='menu-link'>
                 Logout
               </li>
             </ul>

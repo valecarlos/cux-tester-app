@@ -3,7 +3,7 @@ var PropTypes = require('prop-types');
 
 function LabelCheck(props){
   return(
-    <div style={{display: "inline-block"}}>
+    <div style={{display: "inline-block", width: '25%'}}>
       <input className="settingsCheck" id={props.id} type={props.type} name={props.groupName}/>
       <label htmlFor={props.id}>
         <span className="check-tag"></span>
@@ -103,7 +103,8 @@ class Settings extends React.Component{
 
           <div className="form-section">
             <div className="label-column">
-              Ubicación
+              <h4>Ubicación</h4>
+              
             </div>
             <div className="info-column">
 
@@ -112,7 +113,8 @@ class Settings extends React.Component{
 
           <div className="form-section">
             <div className="label-column">
-              Sexo
+              <h4>Sexo</h4>
+              
             </div>
             <div className="info-column">
               {genders.map( (gender) => 
